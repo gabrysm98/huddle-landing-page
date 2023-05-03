@@ -1,0 +1,50 @@
+.content {
+  @media screen and (width>=1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    @media screen and (width >= 1024px) {
+      width: 55%;
+      max-width: 696px;
+    }
+  }
+  &__block {
+    color: #fff;
+    text-align: center;
+    @media screen and (width >= 1024px) {
+      width: 40%;
+      text-align: start;
+    }
+  }
+  &__title {
+    @include poppins(600, 1.5rem);
+    margin-top: 2.5em;
+    @media screen and (width >= 1024px) {
+      font-size: 2.5rem;
+    }
+  }
+  &__text {
+    @include open-sans(1rem);
+    margin: 1em 5px 1.5em;
+    @media screen and (width >= 1024px) {
+      font-size: 1.125rem;
+    }
+  }
+  &__btn {
+    @include poppins(400, 0.75rem);
+    color: $violet;
+    border: none;
+    border-radius: 10em;
+    padding: 0.75em 6.2em;
+    transition: 0.3s all ease;
+    @media screen and (width >= 1024px) {
+      font-size: 1.125rem;
+      padding: 0.75em 3.5em;
+    }
+    &:hover {
+      color: #fff;
+      background-color: $soft-magenta;
+    }
+  }
+}

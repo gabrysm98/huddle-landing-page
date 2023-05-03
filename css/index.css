@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"); /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.page {
+  background-image: url("../../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  min-height: 100vh;
+}
+@media screen and (width > 376px) {
+  .page {
+    background-image: url("../../images/bg-desktop.svg");
+  }
+}
+.page .container {
+  margin-inline: min(8vw, 50px);
+}
+@media screen and (min-width: 1375px) {
+  .page .container {
+    width: 100%;
+    max-width: 1275px;
+    margin-inline: auto;
+  }
+}
+.page__footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #fff;
+}
+.page__footer .attribution {
+  margin: 1em 0;
+}
+@media screen and (width >= 1024px) {
+  .page__footer .attribution {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5em;
+    margin: 0;
+  }
+}
+.page__footer .attribution a {
+  color: hsl(300, 69%, 71%);
+  padding-inline: 0.5em;
+  transition: all 0.3s ease;
+}
+.page__footer .attribution a:hover {
+  color: #dc41dc;
+}
+@media screen and (width >= 1024px) {
+  .page__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+}
+
+.logo {
+  margin: 2.375em 0 4.375em;
+}
+.logo__image {
+  max-width: 264px;
+  width: 35%;
+}
+
+@media screen and (width >= 1024px) {
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (width >= 1024px) {
+  .content__image {
+    width: 55%;
+    max-width: 696px;
+  }
+}
+.content__block {
+  color: #fff;
+  text-align: center;
+}
+@media screen and (width >= 1024px) {
+  .content__block {
+    width: 40%;
+    text-align: start;
+  }
+}
+.content__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2.5em;
+}
+@media screen and (width >= 1024px) {
+  .content__title {
+    font-size: 2.5rem;
+  }
+}
+.content__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 1em 5px 1.5em;
+}
+@media screen and (width >= 1024px) {
+  .content__text {
+    font-size: 1.125rem;
+  }
+}
+.content__btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: hsl(257, 40%, 49%);
+  border: none;
+  border-radius: 10em;
+  padding: 0.75em 6.2em;
+  transition: 0.3s all ease;
+}
+@media screen and (width >= 1024px) {
+  .content__btn {
+    font-size: 1.125rem;
+    padding: 0.75em 3.5em;
+  }
+}
+.content__btn:hover {
+  color: #fff;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.icons {
+  position: relative;
+  font-size: 0.775rem;
+  color: #fff;
+  width: 104px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5.16em auto 0;
+}
+@media screen and (width >= 1024px) {
+  .icons {
+    margin: 0;
+    width: 152px;
+    font-size: 1.15rem;
+    align-self: flex-end;
+  }
+}
+.icons__icon {
+  padding: 1em;
+  border: 2px solid white;
+  border-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  background-color: hsl(257, 40%, 49%);
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.icons__icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icons__link:first-child .icons__icon:hover {
+  color: magenta;
+  border: 2px solid magenta;
+  box-shadow: 0 0 3px 3px magenta, 0 0 30px 9px magenta;
+}
+.icons__link:nth-child(2) .icons__icon:hover {
+  color: #2fed1a;
+  border: 2px solid #2fed1a;
+  box-shadow: 0 0 3px 3px #2fed1a, 0 0 30px 9px #2fed1a;
+}
+.icons__link:nth-child(3) .icons__icon:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 0 3px 3px #fff, 0 0 30px 9px #fff;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,40 @@
+.icons {
+  position: relative;
+  font-size: 0.775rem;
+  color: #fff;
+  width: 104px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5.16em auto 0;
+  @media screen and (width >= 1024px) {
+    margin: 0;
+    width: 152px;
+    font-size: 1.15rem;
+    align-self: flex-end;
+  }
+  &__icon {
+    padding: 1em;
+    border: 2px solid white;
+    border-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    background-color: $violet;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .icons__link:first-child &:hover {
+      @include icon-shadow(magenta);
+    }
+    .icons__link:nth-child(2) &:hover {
+      @include icon-shadow(#2fed1a);
+    }
+    .icons__link:nth-child(3) &:hover {
+      @include icon-shadow(#fff);
+    }
+  }
+}

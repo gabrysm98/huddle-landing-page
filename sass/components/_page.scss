@@ -1,0 +1,47 @@
+.page {
+  background-image: url("../../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: $violet;
+  min-height: 100vh;
+  @media screen and (width > 376px) {
+    background-image: url("../../images/bg-desktop.svg");
+  }
+  .container {
+    margin-inline: min(8vw, 50px);
+    @media screen and (min-width: 1375px) {
+      width: 100%;
+      max-width: 1275px;
+      margin-inline: auto;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #fff;
+    .attribution {
+      margin: 1em 0;
+      @media screen and (width >= 1024px) {
+        display: flex;
+        align-items: flex-end;
+        gap: 0.5em;
+        margin: 0;
+      }
+    }
+    .attribution a {
+      color: $soft-magenta;
+      padding-inline: 0.5em;
+      transition: all 0.3s ease;
+      &:hover {
+        color: darken($soft-magenta, 15);
+      }
+    }
+    @media screen and (width >= 1024px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+  }
+}
